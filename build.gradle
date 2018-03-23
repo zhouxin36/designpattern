@@ -1,0 +1,21 @@
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'idea'
+	group = 'com.zx'
+	version = '0.0.1'
+	sourceCompatibility = 1.8
+	repositories {
+		mavenLocal()
+		jcenter()
+		mavenCentral()
+	}
+
+	dependencies {
+		compile("org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE")
+		testCompile('org.springframework.boot:spring-boot-starter-test:2.0.0.RELEASE')
+
+		compile('org.assertj:assertj-core:3.8.0')
+		testCompile('io.rest-assured:rest-assured:3.0.6')
+
+	}
+}
