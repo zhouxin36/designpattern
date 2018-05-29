@@ -1,2 +1,6 @@
 rootProject.name = 'designpattern'
-include('dynamicproxy')
+include 'factory'
+include 'singleton'
+include 'template'
+include 'strategy'
+

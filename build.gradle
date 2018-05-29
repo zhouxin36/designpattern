@@ -1,4 +1,12 @@
 subprojects {
+	buildscript {
+		repositories {
+			mavenLocal()
+			maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+			jcenter()
+			mavenCentral()
+		}
+	}
 	apply plugin: 'java'
 	apply plugin: 'idea'
 	group = 'com.zx'
@@ -6,16 +14,17 @@ subprojects {
 	sourceCompatibility = 1.8
 	repositories {
 		mavenLocal()
+		maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 		jcenter()
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
 		mavenCentral()
 	}
 
 	dependencies {
-		compile("org.springframework.boot:spring-boot-starter-web:2.0.0.RELEASE")
-		testCompile('org.springframework.boot:spring-boot-starter-test:2.0.0.RELEASE')
-
-		compile('org.assertj:assertj-core:3.8.0')
-		testCompile('io.rest-assured:rest-assured:3.0.6')
-
+		compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+		compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
+		compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 	}
 }
