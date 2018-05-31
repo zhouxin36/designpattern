@@ -4,7 +4,7 @@ public abstract class BubbleSorter <T> {
     /**
      * 冒泡排序
      */
-    public int sort(T array) {
+    public final int sort(T array) {
 
         setArray(array);
         int length = getLength();
