@@ -4,4 +4,5 @@ include 'singleton'
 include 'template'
 include 'strategy'
 include 'builder'
+include 'culture'
 
