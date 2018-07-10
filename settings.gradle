@@ -5,4 +5,5 @@ include 'template'
 include 'strategy'
 include 'builder'
 include 'culture'
+include 'proxy'
 

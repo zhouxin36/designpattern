@@ -65,10 +65,13 @@ public class Culture {
     }
     public static void main(String[] args) {
         Random rand = new Random();
+        int in=0;
         while(!values.isEmpty()){
             int i= rand.nextInt(values.size());
-            System.out.println(values.get(i));
+            System.out.println(in+"、"+values.get(i));
             values.remove(i);
+            in++;
         }
     }
+
 }
