@@ -7,6 +7,7 @@ public class UserDaoProxy implements IUserDao{
         this.target=target;
     }
 
+    @Override
     public void save() {
         System.out.println("开始事务...");
         target.save();//执行目标对象的方法

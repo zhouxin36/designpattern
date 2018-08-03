@@ -10,7 +10,9 @@ import java.lang.reflect.Method;
 public class StuInvocationHandler<T> implements InvocationHandler {
 
     private final static Logger logger = LoggerFactory.getLogger(StuInvocationHandler.class);
-    //invocationHandler持有的被代理对象
+    /**
+     * invocationHandler持有的被代理对象
+     */
     private final Class<T> mapperInterface;
 
     public StuInvocationHandler(Class<T> mapperInterface) {
