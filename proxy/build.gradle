@@ -1,0 +1,5 @@
+dependencies {
+    //cglib
+    implementation('cglib:cglib:2.2.2')
+    implementation('asm:asm:3.3.1')
+}

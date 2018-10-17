@@ -12,5 +12,7 @@ public class Test1 {
         UserDaoProxy proxy = new UserDaoProxy(target);
 
         proxy.save();//执行的是代理的方法
+
+
     }
 }
