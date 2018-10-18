@@ -24,7 +24,8 @@ public class GPClassLoader extends ClassLoader{
         String className = GPClassLoader.class.getPackage().getName() + "." + name;
 
         if(classPathFile != null){
-            File classFile = new File(classPathFile,name.replaceAll("\\.","/") + ".class");
+//            File classFile = new File(classPathFile,name.replaceAll("\\.","/") + ".class");
+            File classFile = new File(GPClassLoader.class.getResource("").getPath() + "\\" + name +  ".class");
             if(classFile.exists()){
                 FileInputStream in = null;
                 ByteArrayOutputStream out = null;

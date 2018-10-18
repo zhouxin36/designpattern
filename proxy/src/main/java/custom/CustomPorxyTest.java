@@ -9,7 +9,7 @@ public class CustomPorxyTest {
     public static void main(String[] args) {
 
         try {
-            Person obj = (Person)new CustomMeipo().getInstance(new Son());
+            Person obj = (Person)new CustomMeipo().getInstance(new Daughter());
             System.out.println(obj.getClass());
             obj.findLove();
 
