@@ -43,6 +43,7 @@ public class GPProxy {
             manage.close();
 
             //4、编译生成的.class文件加载到JVM中来
+//            Class<?> proxyClass = Class.forName("custom.$Proxy0");
             Class proxyClass =  classLoader.findClass("$Proxy0");
             Constructor c = proxyClass.getConstructor(GPInvocationHandler.class);
 //            f.delete();

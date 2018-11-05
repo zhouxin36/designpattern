@@ -25,5 +25,7 @@ public class Test1 {
 
         logger.info("user:{}",user);
 
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+
     }
 }
